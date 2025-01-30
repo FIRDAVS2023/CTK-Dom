@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <title>STK DOM</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container container_menu">
+          <img src="src/icons/logo.svg" class="logo" />
+          <ul class="menu menu_activ">
+            <li class="menu_item">
+              <a href="#block1" class="menu_link">Главная</a>
+            </li>
+            <li class="menu_item">
+              <a href="#block2" class="menu_link">Услуги</a>
+            </li>
+            <li class="menu_item">
+              <a href="#block3" class="menu_link">Каталог</a>
+            </li>
+            <li class="menu_item">
+              <a href="#block4" class="menu_link">Отзывы</a>
+            </li>
+            <li class="menu_item">
+              <a href="#block5" class="menu_link">Контакты</a>
+            </li>
+            <li class="menu_item">
+              <button class="subheader_btn">Cвязатся</button>
+            </li>
+          </ul>
+          <div class="hamburger hamburger_activ">
+            <span> </span>
+            <span> </span>
+            <span> </span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="block1" class="promo">
+      <div class="container container_fullwidth">
+        <div class="row reasons-row promo-row">
+          <div class="promo_head">
+            <div class="rectang">
+              <img src="src/img/Rectangle.png" alt="rec" class="rec" />
+            </div>
+            <h1 class="promo_us">
+              Строительство домов по всему Башкортостану и России
+            </h1>
+            <p class="promo_about">
+              Компания СТК: <br />
+              Мы занимаемся постройкой домов по всему Башкортостану и России
+            </p>
+          </div>
+          <div class="promo_photo">
+            <img src="/src/img/wdom.png" alt="wdom" class="img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="block2" class="build">
+      <div class="container container_about">
+        <div class="row row_build">
+          <div class="rect">
+            <img src="src/img/Rectangle.png" alt="rec" class="rectangle" />
+          </div>
+          <div class="build_name">
+            <h2 class="about">
+              Площадь застройки <br />
+              под индивидуальный проект
+            </h2>
+          </div>
+          <p class="build_promo">В проект входит:</p>
+          <div class="build_about">
+            <div class="card">
+              <div class="number">1</div>
+              Архитектурные <br />
+              решения
+            </div>
+            <div class="card">
+              <div class="number">2</div>
+              Конструктивные <br />
+              решения
+            </div>
+            <div class="card">
+              <div class="number">3</div>
+              Электро-технические <br />
+              решения
+            </div>
+            <div class="card">
+              <div class="number">4</div>
+              Водоснабжение и <br />
+              канализация
+            </div>
+            <div class="card">
+              <div class="number">5</div>
+              Отопление, вентиляция, <br />
+              кондиционирование
+            </div>
+
+            <div class="card special">
+              <div class="number">+</div>
+              Смета на работы и материалы
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="block3" class="catalog-photo">
+      <div class="container">
+        <div class="row">
+          <div class="wphoto">
+            <div class="photo">
+              <img src="src/img/DOM1.png" alt="1" class="d1" />
+            </div>
+            <div class="photo">
+              <img src="src/img/DOM2.png" alt="2" class="d2" />
+            </div>
+            <div class="photo">
+              <img src="src/img/DOM3.png" alt="3" class="d3" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="slider" aria-label="Image Slider">
+      <div class="slider__wrapper">
+        <div class="slider__slide">
+          <img src="src/img/slide7.png" alt="Description of Slide 1" />
+        </div>
+        <div class="slider__slide">
+          <img src="src/img/slide2.png" alt="Description of Slide 2" />
+        </div>
+        <div class="slider__slide">
+          <img src="src/img/slide3.png" alt="Description of Slide 3" />
+        </div>
+        <div class="slider__slide">
+          <img src="src/img/slide4.png" alt="Description of Slide 3" />
+        </div>
+        <div class="slider__slide">
+          <img src="src/img/slide5.png" alt="Description of Slide 3" />
+        </div>
+        <div class="slider__slide">
+          <img src="src/img/slide6.png" alt="Description of Slide 3" />
+        </div>
+        <div class="slider__slide">
+          <img src="src/img/slide1.png" alt="Description of Slide 3" />
+        </div>
+      </div>
+      <div class="slider__controls">
+        <button
+          class="slider__button slider__button--prev"
+          aria-label="Previous Slide"
+        >
+          &#8249;
+        </button>
+        <button
+          class="slider__button slider__button--next"
+          aria-label="Next Slide"
+        >
+          &#8250;
+        </button>
+      </div>
+    </div>
+
+    <section id="block3" class="catalog">
+      <div class="container">
+        <div class="row">
+          <img src="src/img/Rectangle.png" alt="rec" class="rectangle2" />
+          <h2 class="catalog_name">Каталог</h2>
+          <div class="catalog__section">
+            <p class="catalog__subtitle">Наши материалы:</p>
+            <ol class="spisok" type="1" start="1">
+              <li class="item">Бетон на ленту</li>
+              <hr />
+              <li class="item">Арматура "14"</li>
+              <hr />
+              <li class="item">Арматура "8", квадраты каркаса ленты</li>
+              <hr />
+              <li class="item">Арматура "6" (треугольный каркас ленты)</li>
+              <hr />
+              <li class="item">
+                Кирпич одинарный рядовой для кладки нуля в 2 ряда
+              </li>
+              <hr />
+              <li class="item">
+                Утеплитель цоколя Техноплекс 50 мм, по наружке фундамента
+              </li>
+              <hr />
+              <li class="item">Бетон на плиту 150 мм, на всю площадь</li>
+              <hr />
+              <li class="item">Кирпич облицовочный полуторный Магма</li>
+              <hr />
+              <li class="item">Кирпич одинарный для шахты</li>
+              <hr />
+              <li class="item">Блоки керамзитобетонные</li>
+              <hr />
+              <li class="item">Балки потолка 200*100*4000</li>
+              <hr />
+              <li class="item">Балки потолка 200*100*5000</li>
+              <hr />
+              <li class="item">Обрешетка потолка 150*50*6000 шаг 150 мм</li>
+              <hr />
+              <li class="item">Утеплитель потолка</li>
+              <hr />
+              <li class="item">Стропила 200*50*6000 шаг 150 мм</li>
+              <hr />
+              <li class="item">Обрешетка крыши 150*50*6000 шаг 150 мм</li>
+              <hr />
+              <li class="item">Металлопрофильный каркас</li>
+              <hr />
+            </ol>
+          </div>
+          <div class="catalog_">
+            <h2 class="catalog__subtitle catalog_sub">Материалы стен:</h2>
+            <ol class="catalog__list" type="1" start="1">
+              <li class="item">Газоблоки</li>
+              <hr />
+              <li class="item">Газобетон</li>
+              <hr />
+              <li class="item">Арболитовые блоки</li>
+              <hr />
+              <li class="item">SCIP панели</li>
+              <hr />
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="photo3">
+      <div class="container">
+        <div class="row">
+          <div class="wphoto wphoto2">
+            <div class="photo">
+              <img src="src/img/kirpich.png" alt="4" class="d4" />
+            </div>
+            <div class="photo">
+              <img src="src/img/les.png" alt="5" class="d5" />
+            </div>
+            <div class="photo">
+              <img src="src/img/kamen.png" alt="6" class="d6" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="our_product">
+      <div class="container">
+        <div class="row row_product">
+          <img src="src/img/Rectangle.png" alt="rec" class="rectangle3" />
+          <h2 class="product_name">Преимущества нашего продукта</h2>
+          <div class="contain_about">
+            <p class="product_about">Почему стоит выбрать нас?</p>
+            <div class="abouts">
+              <div class="words">
+                <img src="src/icons/ic1.png" alt="1" class="ic" />
+                <div>
+                  <p class="product_word">Универсальные</p>
+                  <p class="product_it">
+                    Одинаково хорошо подходят для стандартной<br />
+                    застройки и воплощения невероятных по дизайну <br />
+                    архитектурных произведений.
+                  </p>
+                </div>
+              </div>
+              <div class="words">
+                <img src="src/icons/ic2.png" alt="2" class="ic" />
+                <div>
+                  <p class="product_word">СЕЙСМО И ЦИКЛОНОСТОЙКИЕ</p>
+                  <p class="product_it">
+                    Особенности конструкции панелей и их монтажа <br />
+                    позволяют зданиям из Econstruct выдерживать <br />
+                    сильные землетрясения и переносить удары <br />
+                    мощных циклонов.
+                  </p>
+                </div>
+              </div>
+
+              <div class="words">
+                <img src="src/icons/ic3.png" alt="3" class="ic" />
+                <div>
+                  <p class="product_word">АБСОЛЮТНО БЕЗОПАСНЫЕ</p>
+                  <p class="product_it">
+                    Наши панели ничего не выделяют! Материалы <br />
+                    прошли исследования по стандартам Евросоюза и <br />
+                    получили сертификаты безопасности.
+                  </p>
+                </div>
+              </div>
+              <div class="words">
+                <img src="src/icons/ic4.png" alt="4" class="ic" />
+                <div>
+                  <p class="product_word">ЭНЕРГОЭФФЕКТИВНЫЕ</p>
+                  <p class="product_it">
+                    В домах из Econstruct очень тепло зимой и <br />
+                    прохладно летом. Панель толщиной в 10 см равна <br />
+                    по теплопроводности 377 см бетона!
+                  </p>
+                </div>
+              </div>
+              <div class="words">
+                <img src="src/icons/ic5.png" alt="5" class="ic" />
+                <div>
+                  <p class="product_word">ПРОСТЫЕ ВМОНТАЖЕ</p>
+                  <p class="product_it">
+                    Легковесные плиты собираются, как конструктор <br />и прямо
+                    на месте монтажа покрываются слоем <br />
+                    специального бетона.
+                  </p>
+                </div>
+              </div>
+              <div class="words">
+                <img src="src/icons/ic6.png" alt="6" class="ic" />
+                <div>
+                  <p class="product_word">ОГНЕСТОЙКИЕ</p>
+                  <p class="product_it">
+                    Полимерное наполнение панели самозатухающее. <br />
+                    Оно выдерживает открытое пламя в течение 2-х <br />
+                    часов, при этом не горит, а плавится.
+                  </p>
+                </div>
+              </div>
+              <div class="words">
+                <img src="src/icons/ic7.png" alt="7" class="ic" />
+                <div>
+                  <p class="product_word">ВЫСОКОПРОЧНЫЕ</p>
+                  <p class="product_it">
+                    Невероятно прочные и долговечные! За счет <br />
+                    запатентованной технологии производства, плиты <br />
+                    обладают высоким нагрузочным сопротивлением
+                  </p>
+                </div>
+              </div>
+              <div class="words">
+                <img src="src/icons/ic8.png" alt="8" class="ic" />
+                <div>
+                  <p class="product_word">ЛЕГКОВЕСНЫЕ</p>
+                  <p class="product_it">
+                    В 2 раза легче кирпича, в 3 раза легче бетонного <br />
+                    блока! Всего один грузовик может перевезти <br />
+                    количество панелей достаточное для возведения <br />
+                    750 кв. м стен.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="material">
+      <div class="container">
+        <div class="row">
+          <div class="mphoto">
+            <div class="maphoto">
+              <img src="src/img/ECON1.png" alt="e1" class="e1" />
+            </div>
+            <div class="mavideo">
+              <video width="440" height="313" autoplay muted loop class="v3">
+                <source src="src/video/video.mp4" />
+              </video>
+            </div>
+            <div class="maphoto">
+              <img src="src/img/ECON2.png" alt="e2" class="e2" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="block9" class="otzivy">
+      <div class="container">
+        <div class="row">
+          <img src="src/img/Rectangle.png" alt="rec" class="rectangle3" />
+          <h2 class="otzivy_name">Отзывы</h2>
+          <div class="otzivy_about">
+            <p class="otzivy_first">
+              обратная связь от наших клиентов <br />подтверждает качество наших
+              работ
+            </p>
+            <div class="otzivy_second">
+              <div class="otzivy_third">
+                <p class="otzivy_word">
+                  Имя Фамилия <br />
+                  @imya_TG
+                </p>
+                <p class="otzivy_it">
+                  Хорошее качество, честный <br />
+                  исполнитель, все в срок. Никаких <br />
+                  нареканий. Работой доволен!
+                </p>
+              </div>
+              <div class="otzivy_third">
+                <p class="otzivy_word">
+                  Имя Фамилия <br />
+                  @imya_TG
+                </p>
+                <p class="otzivy_it">
+                  Хорошее качество, честный <br />
+                  исполнитель, все в срок. Никаких <br />
+                  нареканий. Работой доволен!
+                </p>
+              </div>
+              <div class="otzivy_third">
+                <p class="otzivy_word">
+                  Имя Фамилия <br />
+                  @imya_TG
+                </p>
+                <p class="otzivy_it">
+                  Хорошее качество, честный <br />
+                  исполнитель, все в срок. Никаких <br />
+                  нареканий. Работой доволен!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="end">
+      <div class="container container_end">
+        <div class="row">
+          <div class="end_about">
+            <div class="end_company">
+              <img src="src/icons/logo.svg" alt="end" class="end_logo" />
+              <p class="end_name">компания стк "дом"</p>
+            </div>
+            <div class="logo_massenger">
+              <p class="svyaz">связаться по клику:</p>
+              <img src="src/icons/telephone.png" alt="t" class="t_logo" />
+              <img src="src/icons/whatsapp.png" alt="w" class="t_logo" />
+              <img src="src/icons/telegram.png" alt="t" class="t_logo" />
+              <p class="stk">©2024 СТК</p>
+            </div>
+            <div class="end_contacts">
+              <p class="end_phonename">Телефон:</p>
+              <a href="»tel:+79037777102″" class="end_phone"
+                >+7 903 777 71 02</a
+              >
+              <p class="end_mail">почта:</p>
+              <a href="stkdom@gmail.com" class="end_gmail">stkdom@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="src/js/slick.min.js"></script>
+    <script src="src/js/itc-slider.js"></script>
+    <script src="src/js/script.js"></script>
+  </body>
+</html>
